@@ -15,7 +15,7 @@ jobs:
       run: docker build --tag mrtalon63/packetcrypt:latest .
 
     - name: Login to docker hub registry
-      run: docker login -u MrTalon63 -p ${{secrets.DOCKET_PASSWORD}}
+      run: docker login -u MrTalon63 --password ${{secrets.DOCKET_PASSWORD}}
 
     - name: Push Docker image to registry as version
       run: docker push mrtalon63/mrtalon63/packetcrypt:latest
