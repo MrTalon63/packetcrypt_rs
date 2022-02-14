@@ -20,4 +20,4 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Push Docker image to registry as version
-      run: docker push mrtalon63/mrtalon63/packetcrypt:latest
+      run: docker push mrtalon63/packetcrypt:latest
